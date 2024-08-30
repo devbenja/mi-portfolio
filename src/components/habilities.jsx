@@ -4,9 +4,9 @@ import '../app/Scroll.css';
 
 export const Habilities = () => {
     return (
-        <section id="skills" className="w-full h-screen py-12 md:py-24 lg:py-24 border-b-2 md:px-20 scrollcito">
+        <section id="skills" className="w-full min-h-screen py-12 md:py-24 lg:py-24 border-b-2 md:px-20 scrollcito">
             <div className="container px-4 md:px-6">
-                <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Habilidades y Tecnologías</h3>
+                <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Habilidades</h3>
                 <Tabs defaultValue="frontend" className="w-full">
                     <TabsList className="grid grid-cols-3 mb-8">
                         <TabsTrigger value="frontend">Frontend</TabsTrigger>
