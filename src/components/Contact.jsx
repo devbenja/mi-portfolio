@@ -11,8 +11,8 @@ export const Contact = () => {
         <section id="contact" className="h-screen w-full py-12 md:py-24 scrollcito">
             <div className="container px-4 md:px-6 lg:px-40">
                 <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Get in Touch</h3>
-                <div className="grid gap-6 lg:grid-cols-2">
-                    <div className="space-y-4">
+                <div className="grid gap-10 md:gap-6 lg:grid-cols-2">
+                    <div className="space-y-6">
                         <h3 className="text-2xl font-bold">Contact Information</h3>
                         <div className="flex items-center space-x-2">
                             <Mail className="h-5 w-5 text-primary" />
@@ -26,7 +26,7 @@ export const Contact = () => {
                             <MapPin className="h-5 w-5 text-primary" />
                             <span>Managua, Nicaragua</span>
                         </div>
-                        <div className="flex space-x-4 mt-4">
+                        <div className="flex items-center justify-center md:justify-startA space-x-4 mt-4">
                             <Button variant="outline" size="icon" asChild>
                                 <Link href="https://github.com/janedoe" target="_blank" rel="noopener noreferrer">
                                     <Github className="h-5 w-5" />

@@ -13,10 +13,12 @@ import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Contact } from '@/components/Contact';
 
+import { ReactTyped  } from 'react-typed';
+
 export default function Home() {
 
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(true);
 
 
 	const toggleDarkMode = () => {
@@ -71,7 +73,7 @@ export default function Home() {
 
 				<section className="w-full h-screen py-12 md:py-24 lg:py-32 xl:py-44 border-b-2 mt-8 md:mt-0">
 					<div className="container px-4 md:px-6 lg:px-40">
-						<div className="grid gap-6 lg:grid-cols-[1fr_300px] xl:grid-cols-[1fr_350px] items-center">
+						<div className="grid gap-10 lg:grid-cols-[1fr_300px] xl:grid-cols-[1fr_350px] items-center">
 							<div className="flex items-center justify-center lg:justify-end order-first lg:order-last mt-8">
 								<div className="relative w-48 h-48 lg:w-64 lg:h-64">
 									<div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-25 blur-xl"></div>
@@ -88,7 +90,13 @@ export default function Home() {
 							<div className="flex flex-col justify-center space-y-14 md:space-y-4 text-center md:text-left">
 								<div className="space-y-3">
 									<h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-										Hi, I'm Benjamín Carías
+										<span className="text-blue-600 mr-3">Hi, I'm</span>
+										<ReactTyped 
+											strings={['Benjamín Carías']}
+											typeSpeed={40}
+											backSpeed={60}
+											loop
+										/>
 									</h1>
 									<p className="max-w-[600px] text-muted-foreground md:text-xl dark:text-gray-400">
 										I'm a full-stack developer passionate about creating beautiful, functional, and user-centered digital experiences.
@@ -118,7 +126,7 @@ export default function Home() {
 
 				<Projects />
 
-				<Contact/>
+				<Contact />
 			</div>
 		</div>
 	);
