@@ -1,10 +1,11 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./ui/carousel";
 import { ProjectCard } from "./ProjectCard";
+import '../app/Scroll.css';
 
 
 export const Projects = () => {
     return (
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 scrollcito">
             <div className="container px-4 md:px-6">
                 <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Featured Projects</h3>
                 <Carousel className="w-full max-w-5xl mx-auto">

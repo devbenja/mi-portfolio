@@ -1,9 +1,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SkillGrid } from "./SkillGrid";
+import '../app/Scroll.css';
 
 export const Habilities = () => {
     return (
-        <section id="skills" className="w-full h-screen py-12 md:py-24 lg:py-24 border-b-2 md:px-20">
+        <section id="skills" className="w-full h-screen py-12 md:py-24 lg:py-24 border-b-2 md:px-20 scrollcito">
             <div className="container px-4 md:px-6">
                 <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Habilidades y Tecnologías</h3>
                 <Tabs defaultValue="frontend" className="w-full">

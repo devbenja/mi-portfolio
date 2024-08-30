@@ -1,9 +1,10 @@
 import { TimelineItem } from "./TimeLineItem";
 import { Briefcase, BookMarked } from "lucide-react";
+import '../app/Scroll.css';
 
 export const Experience = () => {
     return (
-        <section id="experience" className="w-full py-12 md:py-24 lg:py-32 border-b-2">
+        <section id="experience" className="w-full py-12 md:py-24 lg:py-32 border-b-2 scrollcito">
             <div className="container px-4 md:px-6">
                 <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Experiencia Profesional</h3>
                 <div className="relative">

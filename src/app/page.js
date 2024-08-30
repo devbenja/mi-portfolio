@@ -1,5 +1,6 @@
 "use client";
 
+import './Scroll.css';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, Moon, Sun, FileText, Terminal } from "lucide-react";
 import Image from "next/image";

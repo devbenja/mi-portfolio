@@ -4,9 +4,11 @@ import { Code, Palette, Globe, Briefcase, GraduationCap, Heart, Gamepad2, Book, 
 import { Skill } from "./skill.jsx";
 import { Interest } from "./Interest.jsx";
 
+import '../app/Scroll.css';
+
 export const About = () => {
     return (
-        <section id="about" className="w-full py-12 md:py-24 lg:py-24 border-b-2">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-24 border-b-2 scrollcito">
 
             <div className="container px-4 md:px-6">
                 <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Sobre mí</h3>
