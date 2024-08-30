@@ -1,18 +1,21 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, Moon, Sun, FileText } from "lucide-react";
+import { ArrowRight, Menu, Moon, Sun, FileText, Terminal } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { About } from "@/components/about.jsx";
 import { Habilities } from "@/components/habilities";
+import { Experience } from "@/components/Experience";
+import { Projects } from "@/components/Projects";
 
 export default function Home() {
 
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [darkMode, setDarkMode] = useState(false);
+
 
 	const toggleDarkMode = () => {
 		setDarkMode(!darkMode);
@@ -23,7 +26,7 @@ export default function Home() {
 			<div className="bg-background text-foreground">
 				<header className="px-4 lg:px-6 h-14 flex items-center justify-between">
 					<Link className="flex items-center justify-center" href="#">
-						<MountainIcon className="h-6 w-6" />
+						<Terminal className="h-6 w-6" />
 						<span className="sr-only">BC</span>
 					</Link>
 					<nav className="hidden md:flex gap-4 sm:gap-6 ml-auto">
@@ -63,10 +66,11 @@ export default function Home() {
 						</nav>
 					</div>
 				)}
-				<section className="w-full h-screen py-12 md:py-24 lg:py-32 xl:py-44 border-b-2 border-gray-600 mt-8 md:mt-0">
+
+				<section className="w-full h-screen py-12 md:py-24 lg:py-32 xl:py-44 border-b-2 mt-8 md:mt-0">
 					<div className="container px-4 md:px-6 lg:px-40">
 						<div className="grid gap-6 lg:grid-cols-[1fr_300px] xl:grid-cols-[1fr_350px] items-center">
-							<div className="flex items-center justify-center lg:justify-end order-first lg:order-last">
+							<div className="flex items-center justify-center lg:justify-end order-first lg:order-last mt-8">
 								<div className="relative w-48 h-48 lg:w-64 lg:h-64">
 									<div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-25 blur-xl"></div>
 									<div className="relative z-10 w-full h-full overflow-hidden">
@@ -79,7 +83,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-							<div className="flex flex-col justify-center space-y-12 md:space-y-4 text-center md:text-left">
+							<div className="flex flex-col justify-center space-y-14 md:space-y-4 text-center md:text-left">
 								<div className="space-y-3">
 									<h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
 										Hi, I'm Benjamín Carías
@@ -104,29 +108,15 @@ export default function Home() {
 					</div>
 				</section>
 
-				<About/>	
+				<About />
 
-				<Habilities/>
+				<Habilities />
+
+				<Experience />
+
+				<Projects />
 			</div>
 		</div>
 	);
 }
 
-function MountainIcon(props) {
-	return (
-		<svg
-			{...props}
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		>
-			<path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-		</svg>
-	);
-}

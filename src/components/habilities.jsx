@@ -3,11 +3,11 @@ import { SkillGrid } from "./SkillGrid";
 
 export const Habilities = () => {
     return (
-        <section id="skills" className="w-full py-12 md:py-24 lg:py-20 md:px-20">
+        <section id="skills" className="w-full h-screen py-12 md:py-24 lg:py-24 border-b-2 md:px-20">
             <div className="container px-4 md:px-6">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">Habilidades y Tecnologías</h2>
+                <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Habilidades y Tecnologías</h3>
                 <Tabs defaultValue="frontend" className="w-full">
-                    <TabsList className="grid w-full grid-flow-row grid-cols-1 md:grid-cols-3 mb-8">
+                    <TabsList className="grid grid-cols-3 mb-8">
                         <TabsTrigger value="frontend">Frontend</TabsTrigger>
                         <TabsTrigger value="backend">Backend</TabsTrigger>
                         <TabsTrigger value="tools">Herramientas</TabsTrigger>
@@ -39,6 +39,12 @@ export const Habilities = () => {
                         <SkillGrid
                             skills={[
                                 { name: "Git", icon: "/git-svgrepo-com.svg", description: "Sistema de control de versiones" },
+                                { name: "Github", icon: "/github-142-svgrepo-com.svg", description: "Repositorios en la Nube" },
+                                { name: "Postman", icon: "/postman-icon-svgrepo-com.svg", description: "Pruebas de APIS" },
+                                { name: "VS Code", icon: "/visual-studio-code-svgrepo-com.svg", description: "Editor de Código" },
+                                { name: "Excel", icon: "/excel2-svgrepo-com.svg", description: "Hojas de Cálculo" },
+                                { name: "Powerpoint", icon: "/powerpoint2-svgrepo-com.svg", description: "Creación de Presentaciones" },
+                                { name: "Word", icon: "/word2-svgrepo-com.svg", description: "Creación de Documentos" },
                             ]}
                         />
                     </TabsContent>

@@ -7,9 +7,10 @@ import { Interest } from "./Interest.jsx";
 export const About = () => {
     return (
         <section id="about" className="w-full py-12 md:py-24 lg:py-24 border-b-2">
+
             <div className="container px-4 md:px-6">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Sobre mí</h2>
-                <div className="grid gap-10 lg:grid-cols-2">
+                <h3 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-14 text-center">Sobre mí</h3>
+                <div className="grid gap-10 grid-cols-1 lg:grid-cols-2">
                     <div className="space-y-4">
                         <p className="text-lg text-muted-foreground text-justify md:ml-20">
                             Soy un desarrollador full-stack con más de 2 años de experiencia en la creación de aplicaciones web innovadoras y eficientes. Mi pasión por la tecnología y el diseño me impulsa a crear soluciones que no solo funcionan bien, sino que también ofrecen una experiencia de usuario excepcional.
@@ -29,7 +30,7 @@ export const About = () => {
                                 <CarouselItem>
                                     <Card>
                                         <CardContent className="flex flex-col items-center justify-center p-6">
-                                            <Briefcase className="h-12 w-12 mb-4 text-primary text-blue-700" />
+                                            <Briefcase className="h-12 w-12 mb-4 text-primary !text-blue-600" />
                                             <h3 className="text-lg font-semibold mb-2">Experiencia</h3>
                                             <p className="text-center text-sm text-muted-foreground">
                                                 2+ años en desarrollo web, trabajando en diferentes proyectos fullstack.
@@ -40,7 +41,7 @@ export const About = () => {
                                 <CarouselItem>
                                     <Card>
                                         <CardContent className="flex flex-col items-center justify-center p-6">
-                                            <GraduationCap className="h-12 w-12 mb-4 text-primary text-blue-600" />
+                                            <GraduationCap className="h-12 w-12 mb-4 text-primary !text-blue-600" />
                                             <h3 className="text-lg font-semibold mb-2">Educación</h3>
                                             <p className="text-center text-sm text-muted-foreground">
                                                 Ingeniería en Computación y múltiples certificaciones en tecnologías web modernas.
@@ -51,7 +52,7 @@ export const About = () => {
                                 <CarouselItem>
                                     <Card>
                                         <CardContent className="flex flex-col items-center justify-center p-6">
-                                            <Heart className="h-12 w-12 mb-4 text-primary text-blue-600" />
+                                            <Heart className="h-12 w-12 mb-4 text-primary !text-blue-600" />
                                             <h3 className="text-lg font-semibold mb-2">Pasiones</h3>
                                             <p className="text-center text-sm text-muted-foreground">
                                                 Contribuir a proyectos, mentoría de desarrollo y explorar nuevas tecnologías.
@@ -60,8 +61,8 @@ export const About = () => {
                                     </Card>
                                 </CarouselItem>
                             </CarouselContent>
-                            <CarouselPrevious className="ml-3" />
-                            <CarouselNext className="mr-3"/>
+                            <CarouselPrevious className="ml-4" />
+                            <CarouselNext className="mr-4" />
                         </Carousel>
                     </div>
                 </div>
