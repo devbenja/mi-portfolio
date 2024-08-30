@@ -6,6 +6,7 @@ import { ArrowRight, Menu, Moon, Sun, FileText, Terminal } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 import { About } from "@/components/about.jsx";
 import { Habilities } from "@/components/habilities";
@@ -129,6 +130,8 @@ export default function Home() {
 				<Projects />
 
 				<Contact />
+
+				<Analytics/>
 			</div>
 		</div>
 	);
