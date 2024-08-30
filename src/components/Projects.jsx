@@ -42,8 +42,8 @@ export const Projects = () => {
                         </CarouselItem>
                     </CarouselContent>
                     <div className="flex justify-center mt-4">
-                        <CarouselPrevious className="hidden md:block" />
-                        <CarouselNext className="hidden md:block" />
+                        <CarouselPrevious className="hidden md:flex" />
+                        <CarouselNext className="hidden md:flex" />
                     </div>
                 </Carousel>
             </div>

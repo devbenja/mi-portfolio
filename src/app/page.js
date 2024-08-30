@@ -13,7 +13,7 @@ import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Contact } from '@/components/Contact';
 
-import { ReactTyped  } from 'react-typed';
+import { ReactTyped } from 'react-typed';
 
 export default function Home() {
 
@@ -30,7 +30,7 @@ export default function Home() {
 			<div className="bg-background text-foreground">
 				<header className="px-4 lg:px-6 h-14 flex items-center justify-between">
 					<Link className="flex items-center justify-center" href="#">
-						<Terminal className="h-6 w-6" />
+						<Terminal className="h-7 w-7 !text-blue-600" />
 						<span className="sr-only">BC</span>
 					</Link>
 					<nav className="hidden md:flex gap-4 sm:gap-6 ml-auto">
@@ -91,7 +91,7 @@ export default function Home() {
 								<div className="space-y-3">
 									<h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
 										<span className="text-blue-600 mr-3">Hi, I'm</span>
-										<ReactTyped 
+										<ReactTyped
 											strings={['Benjamín Carías']}
 											typeSpeed={40}
 											backSpeed={60}
@@ -104,8 +104,10 @@ export default function Home() {
 								</div>
 								<div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
 									<Button className="inline-flex items-center justify-center w-full sm:w-auto h-12 sm:h-auto">
-										View My Work
-										<ArrowRight className="ml-2 h-4 w-4" />
+										<Link className='flex items-center' href="#projects">
+											View My Work
+											<ArrowRight className="ml-2 h-4 w-4" />
+										</Link>
 									</Button>
 									<Button className="inline-flex items-center justify-center w-full sm:w-auto h-12 sm:h-auto">
 										Download CV
