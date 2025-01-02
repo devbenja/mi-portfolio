@@ -1,5 +1,5 @@
 import { TimelineItem } from "./TimeLineItem";
-import { Briefcase, BookMarked } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import '../app/Scroll.css';
 
 export const Experience = () => {
@@ -11,31 +11,22 @@ export const Experience = () => {
                     <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary/20"></div>
                     <div className="space-y-12 lg:space-y-24">
                         <TimelineItem
-                            year="2021 - Presente"
-                            title="Desarrollador Full Stack Senior"
+                            year="2023 - Presente"
+                            title="Desarrollador Full Stack"
                             icon={Briefcase}
-                            company="TechCorp Inc."
-                            description="Desarrollador líder para aplicaciones web de nivel empresarial, mentorando a desarrolladores junior e implementando mejores prácticas para arquitectura escalable."
-                            technologies={["React", "Node.js", "AWS", "GraphQL"]}
+                            company="Desarrollador Independiente"
+                            description="Desarrollo aplicaciones SPA y APIs REST, utilizando tecnologías modernas y buenas prácticas de desarrollo."
+                            technologies={["React", "Next", "Node", "Express", "PostgreSQL", "Tailwind CSS"]}
                             index={0}
                         />
                         <TimelineItem
-                            year="2018 - 2021"
-                            title="Desarrollador Full Stack"
+                            year="2022 - 2023"
+                            title="Software Specialist"
                             icon={Briefcase}
-                            company="InnoSoft Solutions"
-                            description="Desarrollé y mantuve múltiples proyectos de clientes, enfocándome en diseño responsivo y optimización de rendimiento."
-                            technologies={["Vue.js", "Express", "PostgreSQL", "Docker"]}
+                            company="GBM Nicaragua"
+                            description="Desarrollé y mantuve múltiples proyectos de clientes, enfocándome en la optimización de procesos empresariales."
+                            technologies={["Automation Anywhere", "Python", "SQL", "Excel"]}
                             index={1}
-                        />
-                        <TimelineItem
-                            year="2016 - 2018"
-                            title="Desarrollador Frontend"
-                            icon={BookMarked}
-                            company="WebDesign Pro"
-                            description="Creé interfaces de usuario atractivas e implementé lógica frontend compleja para varias aplicaciones web."
-                            technologies={["JavaScript", "CSS3", "HTML5", "jQuery"]}
-                            index={2}
                         />
                     </div>
                 </div>

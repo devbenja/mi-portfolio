@@ -4,7 +4,6 @@ import { Code, Palette, Globe, Briefcase, GraduationCap, Heart, Gamepad2, Book, 
 import { Skill } from "./skill.jsx";
 import { Interest } from "./Interest.jsx";
 
-import '../app/Scroll.css';
 
 export const About = () => {
     return (
