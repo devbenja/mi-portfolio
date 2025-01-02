@@ -1,7 +1,5 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./ui/carousel";
 import { ProjectCard } from "./ProjectCard";
-import '../app/Scroll.css';
-
 
 export const Projects = () => {
     return (

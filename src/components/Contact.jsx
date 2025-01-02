@@ -3,7 +3,6 @@ import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { Input } from "./ui/input";
 import Link from "next/link";
-import '../app/Scroll.css';
 
 
 export const Contact = () => {
