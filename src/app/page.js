@@ -99,7 +99,7 @@ export default function Home() {
 										/>
 									</h1>
 									<p className="max-w-[600px] text-muted-foreground md:text-xl dark:text-gray-400">
-										I'm a full-stack developer passionate about creating beautiful, functional, and user-centered digital experiences.
+										I'm a developer passionate about creating beautiful, functional, and user-centered digital experiences.
 									</p>
 								</div>
 								<div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
