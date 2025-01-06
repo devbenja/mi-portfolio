@@ -1,6 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SkillGrid } from "./SkillGrid";
-import '../app/Scroll.css';
 
 export const Habilities = () => {
     return (

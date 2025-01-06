@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, Moon, Sun, FileText, Terminal } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { Analytics } from "@vercel/analytics/react"
+import { useState } from "react";
 
 import { About } from "@/components/about.jsx";
 import { Habilities } from "@/components/habilities";
@@ -82,7 +81,9 @@ export default function Home() {
 											alt="Benjamín Carías"
 											className="object-cover object-center rounded-2xl"
 											src="/plin.png"
-											layout="fill"
+											width={200}
+											height={200}
+											priority
 										/>
 									</div>
 								</div>
@@ -130,7 +131,6 @@ export default function Home() {
 
 				<Contact />
 
-				<Analytics/>
 			</div>
 		</div>
 	);

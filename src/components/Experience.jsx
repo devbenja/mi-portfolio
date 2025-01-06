@@ -1,6 +1,5 @@
 import { TimelineItem } from "./TimeLineItem";
 import { Briefcase } from "lucide-react";
-import '../app/Scroll.css';
 
 export const Experience = () => {
     return (

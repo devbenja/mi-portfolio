@@ -22,7 +22,7 @@ export const Projects = () => {
                             <ProjectCard
                                 title="Task Management App"
                                 description="A collaborative task management application with real-time updates and team communication features."
-                                image="/placeholder.svg?height=400&width=600"
+                                image="/Patient1.jpeg"
                                 technologies={["Vue.js", "Express", "PostgreSQL", "Socket.io"]}
                                 demoLink="https://example.com/taskapp-demo"
                                 githubLink="https://github.com/janedoe/task-management-app"
@@ -32,7 +32,7 @@ export const Projects = () => {
                             <ProjectCard
                                 title="AI-powered Chatbot"
                                 description="An intelligent chatbot leveraging natural language processing to provide customer support and information."
-                                image="/placeholder.svg?height=400&width=600"
+                                image="/Patient1.jpeg"
                                 technologies={["Python", "TensorFlow", "Flask", "React"]}
                                 demoLink="https://example.com/chatbot-demo"
                                 githubLink="https://github.com/janedoe/ai-chatbot"
