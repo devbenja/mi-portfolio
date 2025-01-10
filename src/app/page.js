@@ -56,7 +56,7 @@ export default function Home() {
 				</header>
 				{mobileMenuOpen && (
 					<div className="md:hidden bg-background text-foreground">
-						<nav className="flex flex-col items-center py-4">
+						<nav className="flex flex-col items-center py-5">
 							<Button variant="ghost" className="w-full text-sm font-medium" asChild>
 								<Link href="#about">About</Link>
 							</Button>
@@ -100,7 +100,7 @@ export default function Home() {
 										/>
 									</h1>
 									<p className="max-w-[600px] text-muted-foreground md:text-xl dark:text-gray-400">
-										I'm a developer passionate about creating beautiful, functional, and user-centered digital experiences.
+										I'm a Web Developer passionate about creating beautiful, functional, and user-centered digital experiences.
 									</p>
 								</div>
 								<div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
